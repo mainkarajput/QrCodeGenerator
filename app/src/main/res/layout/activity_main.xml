@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="QR-Code Generator"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#030304"
+        android:padding="20dp">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/qrvalue"
+        android:layout_below="@+id/textview"
+        android:hint="Text"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:textColor="#D503030C"
+        android:background="@drawable/textborder"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/generate"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Generate"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#F8F7FA"
+        android:textStyle="bold"
+        android:background="@drawable/generatebg">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/qrvalue"
+        android:layout_marginTop="25dp"
+        android:padding="0dp">
+
+    </ImageView>
+
+</RelativeLayout>
